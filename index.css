@@ -1,0 +1,109 @@
+body { 
+    background-image: url(background_note.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.active {
+    color: #0F0F0F;
+}
+
+
+.todolist {
+    display: flex;
+    height: 40px;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .TodoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .todo {
+    display: flex;
+    height: 40px;
+    width: 410px;
+    color: #0f0f0f;
+    flex-direction: row;
+    padding-left: 16px;
+    align-items: center;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0px 4px 10px lightgray;
+  }
+
+  .todo > div {
+    margin-right: 15px;
+  }
+
+  .title {
+    display: flex;
+    font-family: "Dongle", sans-serif;
+    justify-content: center;
+    font-size: 48px;
+    margin-top: 48px;
+  }
+
+  .button {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    color: darkslategrey;
+    background-color: white;
+    box-shadow: 0px 4px 10px lightgray;
+    border: 0px;
+  }
+
+  .todoinput {
+    display: flex;
+    height: 40px;
+    width: 400px;
+    margin: 8px;
+    border-radius: 4px;
+    flex-direction: row;
+    box-shadow: 0px 4px 10px lightgray;
+    border: 0px;
+  }
+
+  #weather{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+
+  #todoinput {
+    width: 400px;
+    padding-left: 10px;
+  }
+
+  #todoBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #chk1 {
+    width: 20px;
+    height: 20px;
+    accent-color: #FFCD29;
+    border-radius: 50%;
+    transition: all 0.5s;
+    border-color: #FFCD29;
+  }
+  /* https://velog.io/@iamjoo/checkbox-%EC%8A%A4%ED%83%80%EC%9D%BC-%EC%BB%A4%EC%8A%A4%ED%85%80 */
