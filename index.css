@@ -1,19 +1,54 @@
-body { 
-    background-image: url(background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+body{
+  background-color: #FDFDFD;
 }
 
 .active {
     color: #0F0F0F;
 }
 
-.title {
+.TopContainer{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+#title {
   display: flex;
   font-family: "Dongle", sans-serif;
   justify-content: center;
   font-size: 54px;
-  margin-top: 60px;
+  margin-top: 40px;
+}
+
+#weather{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.TodoContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex { flex:1}
+/* .guide > * { outline: 1px solid #4f80ff; } */
+
+.MainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.SubContainer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 12px;
 }
 
 .todolist {
@@ -21,12 +56,6 @@ body {
     height: 40px;
     flex-direction: row;
     justify-content: center;
-  }
-
-  .TodoContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .Container {
@@ -63,6 +92,7 @@ body {
     font-size: 24px;
     justify-content: center;
     align-items: center;
+    margin-right: 8px;
     border-radius: 4px;
     color: darkslategrey;
     background-color: white;
@@ -81,11 +111,6 @@ body {
     border: 0px;
   }
 
-  #weather{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 24px;
-  }
 
   #todoinput {
     width: 400px;
