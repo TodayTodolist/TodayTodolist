@@ -29,7 +29,7 @@ justify-content: center;
 .TodoContainer{
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: stretch;
 }
 
 .flex { flex:1}
@@ -42,6 +42,21 @@ justify-content: center;
   align-items: center;
 }
 
+.MainTodo{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 40px;
+  width: 410px;
+  color: #0f0f0f;
+  padding-left: 16px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0px 4px 10px lightgray;
+  margin-left: 4px;
+}
+
 .SubContainer {
   background-color: white;
   display: flex;
@@ -49,6 +64,24 @@ justify-content: center;
   justify-content: flex-start;
   align-items: center;
   border-radius: 12px;
+  box-shadow: inset 0px 4px 10px lightgray;
+  padding-top: 8px;
+  padding-bottom: 20px;
+}
+
+.SubTodo{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 40px;
+  width: 410px;
+  color: #0f0f0f;
+  padding-left: 16px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0px 4px 10px lightgray;
+  margin-left: 4px;
 }
 
 .todolist {
@@ -56,6 +89,7 @@ justify-content: center;
     height: 40px;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
   }
 
   .Container {
@@ -85,7 +119,7 @@ justify-content: center;
   }
 
 
-  .button {
+  .MainTodoButton {
     display: flex;
     height: 40px;
     width: 40px;
@@ -100,7 +134,22 @@ justify-content: center;
     border: 0px;
   }
 
-  .todoinput {
+  .SubTodoButton {
+    display: flex;
+    height: 32px;
+    width: 32px;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    color: darkslategrey;
+    background-color: white;
+    box-shadow: 0px 4px 10px lightgray;
+    border: 0px;
+  }
+
+  .MainTodoinput {
     display: flex;
     height: 40px;
     width: 400px;
@@ -112,7 +161,24 @@ justify-content: center;
   }
 
 
-  #todoinput {
+  #MainTodoinput {
+    width: 400px;
+    padding-left: 10px;
+  }
+
+  .SubTodoinput {
+    display: flex;
+    height: 32px;
+    width: 400px;
+    margin: 8px;
+    flex-direction: row;
+    border-bottom: 2px solid #c9c9c9;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+  }  
+  
+  #SubTodoinput {
     width: 400px;
     padding-left: 10px;
   }
