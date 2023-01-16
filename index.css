@@ -42,7 +42,7 @@ justify-content: center;
   align-items: center;
 }
 
-.MainTodo{
+.MainTodoContainer{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -57,6 +57,14 @@ justify-content: center;
   margin-left: 4px;
 }
 
+.SubTodo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 340px;
+}
+
 .SubContainer {
   background-color: white;
   display: flex;
@@ -64,12 +72,12 @@ justify-content: center;
   justify-content: flex-start;
   align-items: center;
   border-radius: 12px;
-  box-shadow: inset 0px 4px 10px lightgray;
+  box-shadow: inset 2px 2px 15px lightgray;
   padding-top: 8px;
   padding-bottom: 20px;
 }
 
-.SubTodo{
+.SubTodoContainer{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -205,4 +213,19 @@ justify-content: center;
     flex-direction: row;
     align-items: center;
     margin-left: 8px;
+  }
+
+  .SubIcon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 6px;
+  }
+
+  #TopTodo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 8px;
   }
