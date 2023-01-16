@@ -48,7 +48,7 @@ justify-content: center;
   justify-content: flex-start;
   align-items: center;
   height: 40px;
-  width: 410px;
+  width: 340px;
   color: #0f0f0f;
   padding-left: 16px;
   border-radius: 8px;
@@ -199,3 +199,10 @@ justify-content: center;
     border-color: #FFCD29;
   }
   /* https://velog.io/@iamjoo/checkbox-%EC%8A%A4%ED%83%80%EC%9D%BC-%EC%BB%A4%EC%8A%A4%ED%85%80 */
+
+  .icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 8px;
+  }
