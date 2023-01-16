@@ -71,6 +71,7 @@ justify-content: center;
 .SubContainer {
   background-color: white;
   display: flex;
+  width: 95%;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -88,10 +89,10 @@ justify-content: center;
   height: 40px;
   width: 410px;
   color: #0f0f0f;
-  padding-left: 16px;
+  padding-left: 4px;
   border-radius: 8px;
-  background-color: white;
-  box-shadow: 0px 4px 10px lightgray;
+  /* background-color: white;
+  box-shadow: 0px 4px 10px lightgray; */
   margin-left: 4px;
 }
 
