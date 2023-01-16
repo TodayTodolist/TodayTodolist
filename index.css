@@ -65,7 +65,7 @@ justify-content: center;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  width: 340px;
+  width: 360px;
 }
 
 .SubContainer {
@@ -200,6 +200,7 @@ justify-content: center;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 8px;
   }
 
   #chk1 {
@@ -232,6 +233,7 @@ justify-content: center;
     flex-direction: row;
     align-items: center;
     margin-top: 8px;
+    margin-bottom: 12px;
   }
 
   #MainTodoCalendar {
@@ -247,4 +249,29 @@ justify-content: center;
     border-radius: 4px;
     margin-right: 8px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .bar-holder {
+    width: 84%;
+    height: 8px;
+    background-color: rgb(231, 231, 231);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin: 0 auto;
+  }
+
+  .bar-1 {
+    width: 20%;
+    height: 8px;
+    background-color: #FFCD29;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    text-align: center;
+    font-weight: 0;
   }
