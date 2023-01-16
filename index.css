@@ -3,6 +3,7 @@ body{
   /* background-image: url(./background_note.png);
   background-repeat: no-repeat;
   background-size: cover; */
+  font-family: 'Roboto', sans-serif;
 }
 
 .active {
@@ -254,9 +255,9 @@ justify-content: center;
   }
 
   .bar-holder {
-    width: 84%;
+    width: 80%;
     height: 8px;
-    background-color: rgb(231, 231, 231);
+    background-color: #F0F0F0;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
