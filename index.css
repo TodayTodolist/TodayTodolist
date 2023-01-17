@@ -1,30 +1,107 @@
-body { 
-    background-image: url(background_note.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+body{
+  background-color: #FDFDFD;
+  /* background-image: url(./background_note.png);
+  background-repeat: no-repeat;
+  background-size: cover; */
+  font-family: 'Roboto', sans-serif;
 }
 
 .active {
     color: #0F0F0F;
 }
 
-.title {
+.TopContainer{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+#title {
   display: flex;
   font-family: "Dongle", sans-serif;
   justify-content: center;
   font-size: 54px;
-  margin-top: 60px;
+  margin-top: 40px;
+}
+
+#weather{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.TodoContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.flex { flex:1}
+/* .guide > * { outline: 1px solid #4f80ff; } */
+
+.MainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.MainTodoContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: bold;
+  height: 40px;
+  width: 340px;
+  color: #0f0f0f;
+  padding-left: 16px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0px 4px 10px lightgray;
+  margin-left: 4px;
+}
+
+.SubTodo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 360px;
+}
+
+.SubContainer {
+  background-color: white;
+  display: flex;
+  width: 95%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: inset 2px 2px 15px lightgray;
+  padding-top: 8px;
+  padding-bottom: 20px;
+}
+
+.SubTodoContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 40px;
+  width: 410px;
+  color: #0f0f0f;
+  padding-left: 4px;
+  border-radius: 8px;
+  /* background-color: white;
+  box-shadow: 0px 4px 10px lightgray; */
+  margin-left: 4px;
 }
 
 .todolist {
     display: flex;
     height: 40px;
     flex-direction: row;
-    justify-content: center;
-  }
-
-  .TodoContainer {
-    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -56,13 +133,14 @@ body {
   }
 
 
-  .button {
+  .MainTodoButton {
     display: flex;
     height: 40px;
     width: 40px;
     font-size: 24px;
     justify-content: center;
     align-items: center;
+    margin-right: 8px;
     border-radius: 4px;
     color: darkslategrey;
     background-color: white;
@@ -70,10 +148,25 @@ body {
     border: 0px;
   }
 
-  .todoinput {
+  .SubTodoButton {
+    display: flex;
+    height: 32px;
+    width: 32px;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    color: darkslategrey;
+    background-color: white;
+    box-shadow: 0px 4px 10px lightgray;
+    border: 0px;
+  }
+
+  .MainTodoinput {
     display: flex;
     height: 40px;
-    width: 400px;
+    width: 300px;
     margin: 8px;
     border-radius: 4px;
     flex-direction: row;
@@ -81,13 +174,25 @@ body {
     border: 0px;
   }
 
-  #weather{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 24px;
+
+  #MainTodoinput {
+    width: 280px;
+    padding-left: 10px;
   }
 
-  #todoinput {
+  .SubTodoinput {
+    display: flex;
+    height: 32px;
+    width: 400px;
+    margin: 8px;
+    flex-direction: row;
+    border-bottom: 2px solid #c9c9c9;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+  }  
+  
+  #SubTodoinput {
     width: 400px;
     padding-left: 10px;
   }
@@ -97,6 +202,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 8px;
   }
 
   #chk1 {
@@ -108,3 +214,67 @@ body {
     border-color: #FFCD29;
   }
   /* https://velog.io/@iamjoo/checkbox-%EC%8A%A4%ED%83%80%EC%9D%BC-%EC%BB%A4%EC%8A%A4%ED%85%80 */
+
+  .icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 8px;
+  }
+
+  .SubIcon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 6px;
+  }
+
+  #TopTodo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 12px;
+  }
+
+  #MainTodoCalendar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    width: 92px;
+    box-shadow: 0px 4px 10px lightgray;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: 0px;
+    border-radius: 4px;
+    margin-right: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .bar-holder {
+    width: 80%;
+    height: 8px;
+    background-color: #F0F0F0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin: 0 auto;
+  }
+
+  .bar-1 {
+    width: 20%;
+    height: 8px;
+    background-color: #FFCD29;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    text-align: center;
+    font-weight: 0;
+  }

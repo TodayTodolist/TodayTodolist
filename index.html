@@ -9,17 +9,87 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
+  <div class="TopContainer">
     <div id="title" class="title">오늘하루</div>
-    <div id="weather" class="conta">상도동 날씨: 영하 2도   비온 후 맑음</div>
-    <div class="Container">
-      <div id="todoBox">
-        <input
-          id="todoinput"
-          class="todoinput"
-          value=""
-          placeholder="오늘은 어떤 일을 해야하나요?"
-        />
-        <button type="button" class="button" onclick="todolist2()">+</button>
+    <div id="weather" class="conta">상도동 날씨: 영하 2도   구름 조금</div>
+  </div>
+  
+  <section class="TodoContainer guide"> <!-- Container -->
+    <div class="flex" >
+      <div class="MainContainer">
+        <div id="todoBox">
+          <input
+            id="MainTodoinput"
+            class="MainTodoinput"
+            value=""
+            placeholder="오늘은 어떤 일을 해야하나요?"
+          />
+          <input
+            id="MainTodoCalendar"
+            type="date"
+            value=""
+          />
+          <button type="button" class="MainTodoButton" onclick="todolist2()">+</button>
+        </div> <!-- Content -->
+        <div class="TodoContainer">
+          <div class="todolist">
+            <div class="ccheck">
+              <input type="checkbox" id="chk1" />
+              <label for="chk1"></label>
+            </div>
+            <div class="MainTodoContainer">
+              <div>로지랑 놀기</div>
+            </div>            
+            <div class="icon">
+            <img src="edit_icon.png" width="28px" height="28px">
+            </div>
+            <div class="icon">
+            <img src="delete_icon.png" width="28px" height="28px">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex">
+      <div class="SubContainer">
+        <div id="TopTodo">
+          로지랑 놀기
+        </div>
+        <div class="bar-holder">
+          <div class="bar-1"> </div>
+        </div>
+        <div id="todoBox">
+          <input
+            id="SubTodoinput"
+            class="SubTodoinput"
+            value=""
+            placeholder="해야할 일을 추가해주세요."
+          />
+          <button type="button" class="SubTodoButton" onclick="todolist2()">+</button>
+        </div> <!-- Content -->
+        <div class="TodoContainer">
+          <div class="todolist">
+            <div class="ccheck">
+              <input type="checkbox" id="chk1" />
+              <label for="chk1"></label>
+            </div>
+            <div class="SubTodoContainer">
+              <div class="SubTodo">로지랑 밥먹기</div>
+              <div class="SubIcon">
+                <img src="edit_icon.png" width="24px" height="24px">
+              </div>
+              <div class="SubIcon">
+                <img src="delete_icon.png" width="24px" height="24px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </div>
+    
       </div>
     </div>
     <script type="text/javascript" src="./index.js"></script>
