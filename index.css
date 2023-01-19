@@ -101,187 +101,195 @@ justify-content: center;
   margin-left: 4px;
 }
 
-.todolist {
-    display: flex;
-    height: 40px;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
+.MainTodolist {
+  display: flex;
+  height: 40px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
-  .Container {
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 10%;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-  }
+.SubTodolist {
+  display: flex;
+  height: 40px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
-  .todo {
-    display: flex;
-    height: 40px;
-    width: 410px;
-    color: #0f0f0f;
-    flex-direction: row;
-    padding-left: 16px;
-    align-items: center;
-    border-radius: 8px;
-    background-color: white;
-    box-shadow: 0px 4px 10px lightgray;
-  }
+.Container {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10%;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
 
-  .todo > div {
-    margin-right: 15px;
-  }
+.todo {
+  display: flex;
+  height: 40px;
+  width: 410px;
+  color: #0f0f0f;
+  flex-direction: row;
+  padding-left: 16px;
+  align-items: center;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0px 4px 10px lightgray;
+}
 
-
-  .MainTodoButton {
-    display: flex;
-    height: 40px;
-    width: 40px;
-    font-size: 24px;
-    justify-content: center;
-    align-items: center;
-    margin-right: 8px;
-    border-radius: 4px;
-    color: darkslategrey;
-    background-color: white;
-    box-shadow: 0px 4px 10px lightgray;
-    border: 0px;
-  }
-
-  .SubTodoButton {
-    display: flex;
-    height: 32px;
-    width: 32px;
-    font-size: 24px;
-    justify-content: center;
-    align-items: center;
-    margin-right: 8px;
-    border-radius: 100%;
-    color: darkslategrey;
-    background-color: white;
-    box-shadow: 0px 4px 10px lightgray;
-    border: 0px;
-  }
-
-  .MainTodoinput {
-    display: flex;
-    height: 40px;
-    width: 300px;
-    margin: 8px;
-    border-radius: 4px;
-    flex-direction: row;
-    box-shadow: 0px 4px 10px lightgray;
-    border: 0px;
-  }
+.todo > div {
+  margin-right: 15px;
+}
 
 
-  #MainTodoinput {
-    width: 280px;
-    padding-left: 10px;
-  }
+.MainTodoButton {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+  border-radius: 4px;
+  color: darkslategrey;
+  background-color: white;
+  box-shadow: 0px 4px 10px lightgray;
+  border: 0px;
+}
 
-  .SubTodoinput {
-    display: flex;
-    height: 32px;
-    width: 400px;
-    margin: 8px;
-    flex-direction: row;
-    border-bottom: 2px solid #c9c9c9;
-    border-left: 0px;
-    border-right: 0px;
-    border-top: 0px;
-  }  
+.SubTodoButton {
+  display: flex;
+  height: 32px;
+  width: 32px;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  color: darkslategrey;
+  background-color: white;
+  box-shadow: 0px 4px 10px lightgray;
+  border: 0px;
+}
+
+.MainTodoinput {
+  display: flex;
+  height: 40px;
+  width: 300px;
+  margin: 8px;
+  border-radius: 4px;
+  flex-direction: row;
+  box-shadow: 0px 4px 10px lightgray;
+  border: 0px;
+}
+
+
+#MainTodoinput {
+  width: 280px;
+  padding-left: 10px;
+}
+
+.SubTodoinput {
+  display: flex;
+  height: 32px;
+  width: 400px;
+  margin: 8px;
+  flex-direction: row;
+  border-bottom: 2px solid #c9c9c9;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+}  
   
-  #SubTodoinput {
-    width: 400px;
-    padding-left: 10px;
-  }
+#SubTodoinput {
+  width: 400px;
+  padding-left: 10px;
+}
 
-  #todoBox {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 8px;
-  }
+#todoBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
 
-  #chk1 {
-    width: 20px;
-    height: 20px;
-    accent-color: #FFCD29;
-    border-radius: 50%;
-    transition: all 0.5s;
-    border-color: #FFCD29;
-  }
+#chk1 {
+  width: 20px;
+  height: 20px;
+  accent-color: #FFCD29;
+  border-radius: 50%;
+  transition: all 0.5s;
+  border-color: #FFCD29;
+}
   /* https://velog.io/@iamjoo/checkbox-%EC%8A%A4%ED%83%80%EC%9D%BC-%EC%BB%A4%EC%8A%A4%ED%85%80 */
 
-  .icon > img {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 8px;
-    width: 28px;
-    height: 28px;
-  }
+.icon > img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 8px;
+  width: 28px;
+  height: 28px;
+}
 
-  .SubIcon > img {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    margin-left: 6px;
-    width: 24px;
-    height: 24px;
-  }
+.SubIcon > img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 6px;
+  width: 24px;
+  height: 24px;
+}
 
-  #TopTodo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-weight: bold;
-    padding-top: 8px;
-    margin-bottom: 12px;
-  }
+#TopTodo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: bold;
+  padding-top: 8px;
+  margin-bottom: 12px;
+}
 
-  #MainTodoCalendar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 40px;
-    width: 92px;
-    box-shadow: 0px 4px 10px lightgray;
-    padding-left: 8px;
-    padding-right: 8px;
-    border: 0px;
-    border-radius: 4px;
-    margin-right: 8px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
+#MainTodoCalendar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+  width: 92px;
+  box-shadow: 0px 4px 10px lightgray;
+  padding-left: 8px;
+  padding-right: 8px;
+  border: 0px;
+  border-radius: 4px;
+  margin-right: 8px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
-  .bar-holder {
-    width: 80%;
-    height: 8px;
-    background-color: #F0F0F0;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    margin: 0 auto;
-  }
+.bar-holder {
+  width: 80%;
+  height: 8px;
+  background-color: #F0F0F0;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin: 0 auto;
+}
 
-  .bar-1 {
-    width: 20%;
-    height: 8px;
-    background-color: #FFCD29;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    text-align: center;
-    font-weight: 0;
-  }
+.bar-1 {
+  width: 20%;
+  height: 8px;
+  background-color: #FFCD29;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  text-align: center;
+  font-weight: 0;
+}
