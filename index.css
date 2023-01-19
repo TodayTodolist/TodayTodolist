@@ -218,19 +218,23 @@ justify-content: center;
   }
   /* https://velog.io/@iamjoo/checkbox-%EC%8A%A4%ED%83%80%EC%9D%BC-%EC%BB%A4%EC%8A%A4%ED%85%80 */
 
-  .icon {
+  .icon > img {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-left: 8px;
+    width: 28px;
+    height: 28px;
   }
 
-  .SubIcon {
+  .SubIcon > img {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
     margin-left: 6px;
+    width: 24px;
+    height: 24px;
   }
 
   #TopTodo {
