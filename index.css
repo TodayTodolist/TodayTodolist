@@ -62,14 +62,6 @@ justify-content: center;
   align-items: center;
 }
 
-.SubTodo {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  width: 360px;
-}
-
 .SubContainer {
   background-color: white;
   display: flex;
@@ -83,23 +75,6 @@ justify-content: center;
   padding-bottom: 20px;
 }
 
-.SubTodoContainer{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  height: 40px;
-  width: 410px;
-  color: #0f0f0f;
-  padding-left: 4px;
-  border-radius: 8px;
-  /* background-color: white;
-  box-shadow: 0px 4px 10px lightgray; */
-  margin-left: 4px;
-}
-
-
-
 .MainTodolist { 
   display: flex;
   height: 40px;
@@ -109,13 +84,14 @@ justify-content: center;
   margin-bottom: 8px;
 }
 
-  #chk1 {
+  .chk1 {
     width: 20px;
     height: 20px;
     accent-color: #FFCD29;
     border-radius: 50%;
     transition: all 0.5s;
     border-color: #FFCD29;
+    align-items: center;
   }
   /* https://velog.io/@iamjoo/checkbox-%EC%8A%A4%ED%83%80%EC%9D%BC-%EC%BB%A4%EC%8A%A4%ED%85%80 */
 
@@ -146,6 +122,8 @@ justify-content: center;
     height: 28px;
   }
 
+
+
 .SubTodolist {
   display: flex;
   height: 40px;
@@ -154,6 +132,53 @@ justify-content: center;
   align-items: center;
 }
 
+  .chk2 {
+    width: 18px;
+    height: 18px;
+    accent-color: #FFCD29;
+    border-radius: 50%;
+    transition: all 0.5s;
+    border-color: #FFCD29;
+    align-items: center;
+  }
+
+
+
+  .SubTodoContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+    width: 410px;
+    color: #0f0f0f;
+    padding-left: 4px;
+    border-radius: 8px;
+    /* background-color: white;
+    box-shadow: 0px 4px 10px lightgray; */
+    margin-left: 4px;
+  }
+
+  .SubTodo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 360px;
+  }
+
+  .SubIcon > img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 6px;
+    width: 24px;
+    height: 24px;
+  }
+
+
+  
 .Container {
   display: flex;
   justify-content: flex-start;
@@ -251,25 +276,6 @@ justify-content: center;
   justify-content: center;
   align-items: center;
   margin-bottom: 8px;
-}
-
-#chk2 {
-  width: 18px;
-  height: 18px;
-  accent-color: #FFCD29;
-  border-radius: 50%;
-  transition: all 0.5s;
-  border-color: #FFCD29;
-}
-
-.SubIcon > img {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  margin-left: 6px;
-  width: 24px;
-  height: 24px;
 }
 
 #TopTodo {
