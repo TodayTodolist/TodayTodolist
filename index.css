@@ -226,6 +226,15 @@ justify-content: center;
 }
   /* https://velog.io/@iamjoo/checkbox-%EC%8A%A4%ED%83%80%EC%9D%BC-%EC%BB%A4%EC%8A%A4%ED%85%80 */
 
+#chk2 {
+  width: 18px;
+  height: 18px;
+  accent-color: #FFCD29;
+  border-radius: 50%;
+  transition: all 0.5s;
+  border-color: #FFCD29;
+}
+
 .icon > img {
   display: flex;
   flex-direction: row;
