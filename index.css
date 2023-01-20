@@ -62,22 +62,6 @@ justify-content: center;
   align-items: center;
 }
 
-.MainTodoContainer{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  font-weight: bold;
-  height: 40px;
-  width: 340px;
-  color: #0f0f0f;
-  padding-left: 16px;
-  border-radius: 8px;
-  background-color: white;
-  box-shadow: 0px 4px 10px lightgray;
-  margin-left: 4px;
-}
-
 .SubTodo {
   display: flex;
   flex-direction: row;
@@ -114,13 +98,53 @@ justify-content: center;
   margin-left: 4px;
 }
 
-.MainTodolist {
+
+
+.MainTodolist { 
   display: flex;
   height: 40px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-bottom: 8px;
 }
+
+  #chk1 {
+    width: 20px;
+    height: 20px;
+    accent-color: #FFCD29;
+    border-radius: 50%;
+    transition: all 0.5s;
+    border-color: #FFCD29;
+  }
+  /* https://velog.io/@iamjoo/checkbox-%EC%8A%A4%ED%83%80%EC%9D%BC-%EC%BB%A4%EC%8A%A4%ED%85%80 */
+
+
+  .MainTodoContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+    height: 40px;
+    width: 340px;
+    color: #0f0f0f;
+    padding-left: 16px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0px 4px 10px lightgray;
+    margin-left: 4px;
+  }
+
+
+  .Mainicon > img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 8px;
+    width: 28px;
+    height: 28px;
+  }
 
 .SubTodolist {
   display: flex;
@@ -229,32 +253,13 @@ justify-content: center;
   margin-bottom: 8px;
 }
 
-.chk1 {
-  width: 20px;
-  height: 20px;
-  accent-color: #FFCD29;
-  border-radius: 50%;
-  transition: all 0.5s;
-  border-color: #FFCD29;
-}
-  /* https://velog.io/@iamjoo/checkbox-%EC%8A%A4%ED%83%80%EC%9D%BC-%EC%BB%A4%EC%8A%A4%ED%85%80 */
-
-.chk2 {
+#chk2 {
   width: 18px;
   height: 18px;
   accent-color: #FFCD29;
   border-radius: 50%;
   transition: all 0.5s;
   border-color: #FFCD29;
-}
-
-.icon > img {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-left: 8px;
-  width: 28px;
-  height: 28px;
 }
 
 .SubIcon > img {

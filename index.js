@@ -20,9 +20,25 @@ const todo = [
     console.log(`해야할일 => ${todo[1].work}`);
     // 기한 => ${todo[1].deadline}
 
-    const obj = document.createElement("div");
-    obj.classList.add("MainTodolist")
-    obj.innerHTML = MainTodoinput.value; // input 태그 값을 가져와서 value 값을 html 값에 넣어줌
+    const obj = document.createElement("div"); //가장 큰 틀을 생성, obj로 지정
+    obj.classList.add("MainTodolist"); //"MainTodolist"라는 클래스에 추가
+
+    const checkBox = document.createElement("input");
+    checkBox.setAttribute('type',"checkbox");
+    obj.appendChild(checkBox); //체크박스를 가장 큰 틀 안에 넣어줌
+
+    const todoBox = document.createElement("div");
+    todoBox.innerHTML = MainTodoinput.value;
+    todoBox.classList.add("MainTodoContainer");
+    obj.appendChild(todoBox);
+
+    const editBtn = document.createElement("div");
+    editBtn.src=""
+    editBtn.classList.add("Mainicon");
+    obj.appendChild(editBtn);
+  
+    
+    // input 태그 값을 가져와서 value 값을 html 값에 넣어줌
     //obj.classList.add("active") // 또는  obj.style.display = "flex" 지금 게 프로그래밍적으로 더 나음 //속성 변환
 
     TodoContainerMain.appendChild(obj);
