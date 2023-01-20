@@ -11,6 +11,7 @@ const todo = [
   let MainTodoinput = document.querySelector(".MainTodoinput");
   let SubTodo = document.querySelector(".SubTodolist");
   let SubTodoinput = document.querySelector(".SubTodoinput");
+  const TodoContainerMain = document.querySelector(".TodoContainerMain")
 
 
   const todolist1 = () => {
@@ -22,7 +23,7 @@ const todo = [
     obj.innerHTML = MainTodoinput.value; // input 태그 값을 가져와서 value 값을 html 값에 넣어줌
     //obj.classList.add("active") // 또는  obj.style.display = "flex" 지금 게 프로그래밍적으로 더 나음 //속성 변환
 
-    MainTodo.appendChild(obj);
+    TodoContainerMain.appendChild(obj);
     MainTodoinput.value = "";
   }
 
