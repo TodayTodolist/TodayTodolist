@@ -7,6 +7,9 @@
     <title>오늘하루</title>
 
     <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Nanum+Gothic+Coding:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="TopContainer">
@@ -39,23 +42,21 @@
         <div class="TodoContainerMain">
 
           <div class="MainTodolist">
-            <div class="ccheck">
-              <input type="checkbox" id="chk1" />
-              <label for="chk1"></label>
-            </div>
+            <input type="checkbox" class="chk1"/>
             <div class="MainTodoContainer">
               <div>로지랑 놀기</div>
             </div>            
-            <div class="icon">
+            <div class="Mainicon">
               <img src="edit_icon.png">
             </div>
-            <div class="icon">
+            <div class="Mainicon">
               <img src="delete_icon.png">
             </div>
             
           </div>
 
 
+          
         </div>
       </div>
     </div>
@@ -76,12 +77,12 @@
           />
           <button type="button" class="SubTodoButton" onclick="todolist2()">+</button>
         </div> <!-- Content -->
-        <div class="TodoContainer">
+        
+        <div class="TodoContainerSub">
+          
+          
           <div class="SubTodolist">
-            <div class="ccheck">
-              <input type="checkbox" id="chk2" />
-              <label for="chk2"></label>
-            </div>
+            <input type="checkbox" class="chk2"/>
             <div class="SubTodoContainer">
               <div class="SubTodo">로지랑 밥먹기</div>
               <div class="SubIcon">
@@ -92,6 +93,8 @@
               </div>
             </div>
           </div>
+
+
         </div>
       </div>
     </div>
