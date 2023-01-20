@@ -25,6 +25,7 @@ const todo = [
 
     const checkBox = document.createElement("input");
     checkBox.setAttribute('type',"checkbox");
+    checkBox.classList.add("chk1");
     obj.appendChild(checkBox); //체크박스를 가장 큰 틀 안에 넣어줌
 
     const todoBox = document.createElement("div");
@@ -32,17 +33,28 @@ const todo = [
     todoBox.classList.add("MainTodoContainer");
     obj.appendChild(todoBox);
 
-    const editBtn = document.createElement("div");
-    editBtn.src=""
-    editBtn.classList.add("Mainicon");
-    obj.appendChild(editBtn);
+    const editBtn = document.createElement("div"); // div class Mainicon 생성
+    const editBtnImg = document.createElement("img") // 하위 개념인 img src 생성
+    editBtnImg.src = "./edit_icon.png"; // 이미지 불러오기
+    editBtn.classList.add("Mainicon"); //css mainicon 속성 입혀주기
+    editBtn.appendChild(editBtnImg); // 버튼 이미지를 상위 editBtn div에 속하게 해주기
+    obj.appendChild(editBtn); // 버튼 div 자체를 가장 큰 틀 안에 속하게 해주기
+
+    const deleteBtn = document.createElement("div");
+    const deleteBtnImg = document.createElement("img");
+    deleteBtnImg.src = "./delete_icon.png";
+    deleteBtn.classList.add("Mainicon");
+    deleteBtn.appendChild(deleteBtnImg);
+    obj.appendChild(deleteBtn);
+
+    todoBox.value = "";
   
     
     // input 태그 값을 가져와서 value 값을 html 값에 넣어줌
     //obj.classList.add("active") // 또는  obj.style.display = "flex" 지금 게 프로그래밍적으로 더 나음 //속성 변환
 
     TodoContainerMain.appendChild(obj);
-    TodoContainerMain.value = "";
+    MainTodoinput.value = "";
   }
 
   const todolist2 = () => {
