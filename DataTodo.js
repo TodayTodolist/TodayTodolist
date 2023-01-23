@@ -18,7 +18,8 @@ const Database = {
   // },
 };
 
-const TodoObj = function (todo, deadDate, result, sucessBar, subTodo) {
+const TodoObj = function (key,todo, deadDate, result, sucessBar, subTodo) {
+  this.key = key
   this.Todo = todo;
   this.Date = deadDate;
   this.Result = result;
@@ -29,36 +30,33 @@ const TodoObj = function (todo, deadDate, result, sucessBar, subTodo) {
 let number = 0;
 
 const tcard = document.querySelector("#temp-card");
-const div = document.createElement("div")
-const makeTodoBtn = document.querySelector("#makeTodo")
-const TodoContainerMain = document.querySelector(".TodoContainerMain")
+const div = document.createElement("div");
+const makeTodoBtn = document.querySelector("#makeTodo");
+const TodoContainerMain = document.querySelector(".TodoContainerMain");
 
 const makeTodoUI = (obj) => {
+  while (TodoContainerMain.hasChildNodes()) {
+    TodoContainerMain.removeChild(TodoContainerMain.firstChild);
+  }
   for (const item in obj) {
-    divo= div.cloneNode(true)
+    divo = div.cloneNode(true);
     let html = tcard.innerHTML;
     html = html.replace("{Todo}", Database[item]["Todo"]);
-    console.log(html)
-    divo.innerHTML = html
-    TodoContainerMain.appendChild(divo)
+    divo.innerHTML = html;
+    TodoContainerMain.appendChild(divo);
   }
 };
 
 const addTodo = (todo, deadDate, result, sucessBar, subTodo) => {
-  const Obj = new TodoObj(todo, deadDate, result, sucessBar, subTodo);
+  const Obj = new TodoObj(number,todo, deadDate, result, sucessBar, subTodo);
   Database[`Todo${number}`] = Obj;
   // makeTodoUI(Database);
   number++;
 };
 
-makeTodoBtn.addEventListener("click", (e)=>{
-  e.preventDefault()
-  addTodo(MainTodoinput.value,"밤12시까지", false, 5, { subTodo: {} })
-  // makeTodoUI(Database);
-})
-
-
-
-// addTodo("자기", "밤12시까지", false, 5, { subTodo: {} });
-// addTodo("놀기", "오전12시까지", true, 7, { subTodo: {} });
-
+makeTodoBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  addTodo(MainTodoinput.value, "밤12시까지", false, 5, { subTodo: {} });
+  makeTodoUI(Database);
+  MainTodoinput.value=""
+});
