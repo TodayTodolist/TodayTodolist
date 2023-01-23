@@ -1,10 +1,6 @@
 
-
 body{
   background-color: #FDFDFD;
-  /* background-image: url(./background_note.png);
-  background-repeat: no-repeat;
-  background-size: cover; */
   font-family: 'Roboto', sans-serif;
 }
 
@@ -99,6 +95,7 @@ justify-content: center;
 
 
   .MainTodoContainer{
+    all: unset;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -114,14 +111,31 @@ justify-content: center;
     margin-left: 4px;
   }
 
-
-  .Mainicon > img {
+  .MainiconEdit > img {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-left: 8px;
     width: 28px;
     height: 28px;
+  }
+  .MainiconEdit > img:hover{
+    border: 1px solid red ;
+    border-radius: 10%;
+  }
+
+
+  .MainiconDlt > img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 8px;
+    width: 28px;
+    height: 28px;
+  }
+  .MainiconDlt > img:hover{
+    border: 1px solid red ;
+    border-radius: 10%;
   }
 
 
@@ -286,7 +300,8 @@ justify-content: center;
   align-items: center;
   font-weight: bold;
   padding-top: 8px;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
+  margin-top: 10px;
 }
 
 #MainTodoCalendar {

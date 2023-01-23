@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>오늘하루</title>
 
-    <link rel="stylesheet" href="./index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Nanum+Gothic+Coding:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘하루</title>
+
+  <link rel="stylesheet" href="./index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Nanum+Gothic+Coding:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
   <div class="TopContainer">
     <div id="title" class="title">오늘하루</div>
@@ -21,42 +25,32 @@
       <div class="weather status">구름 조금</div>
     </div>
   </div>
-  
+
   <section class="TodoContainer guide"> <!-- Container -->
-    <div class="flex" >
+    <div class="flex">
       <div class="MainContainer">
         <div id="todoBox">
-          <input
-            id="MainTodoinput"
-            class="MainTodoinput"
-            value=""
-            placeholder="오늘은 어떤 일을 해야하나요?"
-          />
-          <input
-            id="MainTodoCalendar"
-            type="date"
-            value=""
-          />
-          <button type="button" class="MainTodoButton" onclick="todolist1()">+</button>
+          <input id="MainTodoinput" class="MainTodoinput" value="" placeholder="오늘은 어떤 일을 해야하나요?" />
+          <input id="MainTodoCalendar" type="date" value="" />
+          <button id="makeTodo" type="button" class="MainTodoButton" >+</button>
         </div> <!-- Content -->
         <div class="TodoContainerMain">
 
           <div class="MainTodolist">
-            <input type="checkbox" class="chk1"/>
+            <input type="checkbox" class="chk1" />
             <div class="MainTodoContainer">
               <div>로지랑 놀기</div>
-            </div>            
-            <div class="Mainicon">
+            </div>
+            <div class="MainiconEdit">
               <img src="edit_icon.png">
             </div>
-            <div class="Mainicon">
+            <div class="MainiconDlt">
               <img src="delete_icon.png">
             </div>
-            
           </div>
 
 
-          
+
         </div>
       </div>
     </div>
@@ -69,41 +63,51 @@
           <div class="bar-1"> </div>
         </div>
         <div id="todoBox">
-          <input
-            id="SubTodoinput"
-            class="SubTodoinput"
-            value=""
-            placeholder="해야할 일을 추가해주세요."
-          />
+          <input id="SubTodoinput" class="SubTodoinput" value="" placeholder="해야할 일을 추가해주세요." />
           <button type="button" class="SubTodoButton" onclick="todolist2()">+</button>
         </div> <!-- Content -->
-        
+
         <div class="TodoContainerSub">
-          
-          
+
+
           <div class="SubTodolist">
-            <input type="checkbox" class="chk2"/>
+            <input type="checkbox" class="chk2" />
             <div class="SubTodoContainer">
               <div class="SubTodo">로지랑 밥먹기</div>
-              <div class="SubIcon">
+              <div class="MainiconEdit">
                 <img src="edit_icon.png">
               </div>
-              <div class="SubIcon">
+              <div class="MainiconDlt">
                 <img src="delete_icon.png">
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
     </div>
   </section>
 
   </div>
-    
-      </div>
-    </div>
-    <script type="text/javascript" src="./index.js"></script>
+  </div>
+  </div>
+
 </body>
 </html>
+
+<template id="temp-card" type="text/template">
+  <div class="MainTodolist">
+    <input type="checkbox" class="chk1" />
+    <div class="MainTodoContainer">
+      <div>{Todo}</div>
+    </div>
+    <div class="MainiconEdit">
+      <img src="edit_icon.png">
+    </div>
+    <div class="MainiconDlt">
+      <img src="delete_icon.png">
+    </div>
+  </div>
+</template>
+
+<!-- <script type="text/javascript" src="./index.js"></script> -->
+<script type="text/javascript" src="./DataTodo.js"></script>
