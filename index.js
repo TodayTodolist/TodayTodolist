@@ -42,7 +42,6 @@ const todo = [
       todoBox.disabled = true
     }
     })
-
     const editBtnImg = document.createElement("img") // 하위 개념인 img src 생성
     editBtnImg.src = "./edit_icon.png"; // 이미지 불러오기
     editBtn.classList.add("Mainicon"); //css mainicon 속성 입혀주기
@@ -55,6 +54,11 @@ const todo = [
     deleteBtn.classList.add("Mainicon");
     deleteBtn.appendChild(deleteBtnImg);
     obj.appendChild(deleteBtn);
+    // deleteBtn.addEventListener("click", deleteTodos);
+    // function deleteTodos(event) {
+    //   const removingOne = event.target.parentElement;
+    //   removingOne.remove(obj);
+    // }
 
     TodoContainerMain.appendChild(obj);
     MainTodoinput.value = "";
