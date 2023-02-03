@@ -28,12 +28,20 @@ const todo = [
     checkBox.classList.add("chk1");
     obj.appendChild(checkBox); //체크박스를 가장 큰 틀 안에 넣어줌
 
-    const todoBox = document.createElement("div");
-    todoBox.innerHTML = MainTodoinput.value;
+    const todoBox = document.createElement("input");
+    todoBox.value = MainTodoinput.value;
+    todoBox.disabled = true;
     todoBox.classList.add("MainTodoContainer");
     obj.appendChild(todoBox);
 
     const editBtn = document.createElement("div"); // div class Mainicon 생성
+    editBtn.addEventListener("click", ()=>{console.log("나 수정버튼임!")
+    if (todoBox.disabled === true){
+      todoBox.disabled = false
+    } else if (todoBox.disabled === false){
+      todoBox.disabled = true
+    }
+    })
     const editBtnImg = document.createElement("img") // 하위 개념인 img src 생성
     editBtnImg.src = "./edit_icon.png"; // 이미지 불러오기
     editBtn.classList.add("Mainicon"); //css mainicon 속성 입혀주기
@@ -46,6 +54,11 @@ const todo = [
     deleteBtn.classList.add("Mainicon");
     deleteBtn.appendChild(deleteBtnImg);
     obj.appendChild(deleteBtn);
+    // deleteBtn.addEventListener("click", deleteTodos);
+    // function deleteTodos(event) {
+    //   const removingOne = event.target.parentElement;
+    //   removingOne.remove(obj);
+    // }
 
     TodoContainerMain.appendChild(obj);
     MainTodoinput.value = "";
@@ -68,14 +81,22 @@ const todo = [
     obj.appendChild(checkBox);
 
     const todoBox = document.createElement("div");
-    const todo = document.createElement("div");
+    const todo = document.createElement("input");
     todo.classList.add("SubTodo");
-    todo.innerHTML = SubTodoinput.value; 
+    todo.disabled = true;
+    todo.value = SubTodoinput.value; 
     todoBox.classList.add("SubTodoContainer");
     todoBox.appendChild(todo);
     obj.appendChild(todoBox);
 
     const editBtn = document.createElement("div");
+    editBtn.addEventListener("click", ()=>{console.log("나 수정버튼임!")
+    if (todo.disabled === true){
+      todo.disabled = false
+    } else if (todo.disabled === false){
+      todo.disabled = true
+    }
+    })
     const editBtnImg = document.createElement("img");
     editBtnImg.src = "./edit_icon.png";
     editBtn.classList.add("SubIcon");
