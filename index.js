@@ -96,6 +96,7 @@ const todo = [
     editBtn.addEventListener("click", ()=>{console.log("나 수정버튼임!")
     if (todo.disabled === true){
       todo.disabled = false
+      todo.focus()
     } else if (todo.disabled === false){
       todo.disabled = true
     }
