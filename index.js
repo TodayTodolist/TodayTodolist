@@ -54,11 +54,14 @@ const todo = [
     deleteBtn.classList.add("Mainicon");
     deleteBtn.appendChild(deleteBtnImg);
     obj.appendChild(deleteBtn);
-    // deleteBtn.addEventListener("click", deleteTodos);
-    // function deleteTodos(event) {
-    //   const removingOne = event.target.parentElement;
-    //   removingOne.remove(obj);
-    // }
+    function destory_todolist1() {
+      const row=this.parentNode;
+      const parent=row.parentNode;
+      console.log(row)
+      console.log(parent)
+      row.parentNode.removeChild(row);
+    }
+    deleteBtn.addEventListener('click', destory_todolist1);
 
     TodoContainerMain.appendChild(obj);
     MainTodoinput.value = "";
@@ -109,6 +112,14 @@ const todo = [
     deleteBtn.classList.add("SubIcon");
     deleteBtn.appendChild(deleteBtnImg);
     todoBox.appendChild(deleteBtn);
+    function destory_todolist2() {
+      const row=this.parentNode;
+      const parent=row.parentNode;
+      console.log(row)
+      console.log(parent)
+      row.parentNode.removeChild(row);
+    }
+    deleteBtn.addEventListener('click', destory_todolist2);
 
     TodoContainerSub.appendChild(obj);
     SubTodoinput.value = "";
