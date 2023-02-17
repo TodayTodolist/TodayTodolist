@@ -104,14 +104,14 @@ const todo = [
     editBtnImg.src = "./edit_icon.png";
     editBtn.classList.add("SubIcon");
     editBtn.appendChild(editBtnImg);
-    todoBox.appendChild(editBtn);
+    obj.appendChild(editBtn);
     
     const deleteBtn = document.createElement("div");
     const deleteBtnImg = document.createElement("img");
     deleteBtnImg.src = "./delete_icon.png";
     deleteBtn.classList.add("SubIcon");
     deleteBtn.appendChild(deleteBtnImg);
-    todoBox.appendChild(deleteBtn);
+    obj.appendChild(deleteBtn);
     function destory_todolist2() {
       const row=this.parentNode;
       const parent=row.parentNode;
